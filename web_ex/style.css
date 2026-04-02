@@ -1,0 +1,36 @@
+body {
+    background-color: aquamarine;
+}
+a {
+    color: red;
+    text-decoration: none;
+}
+h1 {
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 25px;
+}
+h2 {
+    color: Blue
+}
+p {
+    color: purple;
+}
+ul {
+    border-right: 1px solid gray;
+    width: 100px;
+    margin: 0;
+    padding: 25px;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#grid ul {
+    padding-left: 30px;
+}
+#grid #article {
+    padding-left: 30px;
+
+}
