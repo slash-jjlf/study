@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Color Button</title>
+    <style>
+        .btn {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+        .black {background-color: black;}
+        .red {background-color: red;}
+        .blue {background-color: blue;}
+    </style>
+</head>
+<body>
+    <h1>Color Button example</h1>
+        <p>검정, 빨강, 파란색의 3가지 버튼을 만들고, 버튼을 눌러렀을 때,배경색이 바뀌도록 만들어보자.</p>
+
+        검정 <input type="button" class="btn black" onclick="
+            var target = document.querySelector('body');
+
+            if (target.style.backgroundColor !== 'black') {
+            target.style.backgroundColor='black';
+            target.style.color='white';}
+            else {target.style.backgroundColor='white';
+            target.style.color='black';}
+        "><br>
+
+        빨강 <input type="button" class="btn red" onclick="
+            var target = document.querySelector('body');
+
+            if (target.style.backgroundColor !== 'red') {
+            target.style.backgroundColor='red';
+            target.style.color='white';}
+            else {target.style.backgroundColor='white';
+            target.style.color='black';}
+        "><br>
+
+        파랑 <input type="button" class="btn blue" onclick="
+            var target = document.querySelector('body');
+
+            if (target.style.backgroundColor !== 'blue') {
+            target.style.backgroundColor='blue';
+            target.style.color='white';}
+            else {target.style.backgroundColor='white';
+            target.style.color='black';}
+        "><br>
+   
+</body>
+</html>
