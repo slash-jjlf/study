@@ -6,15 +6,22 @@
   </head>
 
   <body>
-    <h1><a href="index.html">WEB</a></h1>
+    <h1><a href="index.html">WEB</a></h1>    
     <input type="button" value="night" onclick="
-      document.querySelector('body').style.backgroundColor = 'black';
-      document.querySelector('body').style.color = 'white'
-    ">
-    <input type="button" value="day" onclick="
-      document.querySelector('body').style.backgroundColor = 'white';
-      document.querySelector('body').style.color = 'black'
-    ">
+      var target = document.querySelector('body');
+      if (this.value === 'night') {
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        this.value = 'day';
+      }
+      else {
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        this.value = 'night';
+      }
+      "
+    >
+
       <ol>
         <li><a href="1.html">HTML</a></li>
         <li><a href="2.html">CSS </a></li>
@@ -24,5 +31,19 @@
         <p>
           JavaScript (JS)[a] is a programming language and core technology of the Web, alongside HTML and CSS. It was created by Brendan Eich in 1995.[6] As of 2025, the overwhelming majority of websites (98.9%) uses JavaScript for client side webpage behavior.[10]
         </p>
+        
+      <input type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if (this.value === 'night') {
+          target.style.backgroundColor = 'black';
+          target.style.color = 'white';
+          this.value = 'day';
+        }
+        else {
+          target.style.backgroundColor = 'white';
+          target.style.color = 'black';
+          this.value = 'night';
+        }
+        "
   </body>
 </html>
