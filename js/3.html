@@ -4,6 +4,15 @@
     <title>Web1 - JavaScript</title>
     <meta charset="utf-8">
     <script>
+      function SetColor(color) {
+        var alist=document.querySelectorAll('a');
+        var i = 0;
+        while (i < alist.length) {
+          alist[i].style.color = color;
+          i = i+1
+        }
+      }
+
       function DayNigihtHandler(self) {
       var target = document.querySelector('body');
       if (self.value === 'night') {
@@ -11,24 +20,14 @@
         target.style.color = 'white';
         self.value = 'day';
 
-        var alist=document.querySelectorAll('a');
-        var i = 0;
-        while (i < alist.length) {
-          alist[i].style.color = 'powderblue';
-          i = i+1
-        }
+        SetColor('powderblue');
       }
       else {
         target.style.backgroundColor = 'white';
         target.style.color = 'black';
         self.value = 'night';
 
-        var alist=document.querySelectorAll('a');
-        var i = 0;
-        while (i < alist.length) {
-          alist[i].style.color = 'red';
-          i = i+1
-      }
+        SetColor('blue');
       }
       }
     </script>
@@ -37,7 +36,7 @@
   <body>
     <h1><a href="index.html">WEB</a></h1>    
     <input type="button" value="night" onclick="
-    DayNigihtHandler(this);
+      DayNigihtHandler(this);
     ">
 
       <ol>
@@ -51,7 +50,7 @@
         </p>
         
       <input type="button" value="night" onclick="
-      DayNigihtHandler(this);
+        DayNigihtHandler(this);
       ">
   </body>
 </html>
