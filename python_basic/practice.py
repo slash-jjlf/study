@@ -69,3 +69,30 @@
 #     player_health -= 1
 
 # print("플레이어 체력 소진, 게임 오버!")
+
+# Dictioinanry
+# student = {"이름": "지만", "나이": 20, "학과": "컴퓨터공학"}
+# print(student)
+# print(student["이름"])
+# student["학년"] = 3
+# print(student)
+# del student["학년"]
+# print(student)
+
+# student = {"이름": "지만", "나이": 20, "학과": "컴퓨터공학"}
+
+# for key, value in student.items():
+#     print(key, ": ", value )
+
+# text = "안녕하세요, 파이썬을 배워요!"
+# print("문장의 길이는:", len(text))
+
+# text = "안녕하세요, 파이썬을 배워요!"
+
+# # if "파이썬" in text:
+# #     print("문장안에 '파이썬'이 있어요!")
+# # else:
+# #     print("문장안에 '파이썬'이 없어요!")
+
+# new_text = text.replace("파이썬", "코딩")
+# print(new_text)
