@@ -1,5 +1,5 @@
 def main():
-    print("Hello from python-basic!")
+    print("Hello from pygame-basic!")
 
 
 if __name__ == "__main__":
