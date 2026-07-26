@@ -45,8 +45,8 @@ game_font = pygame.font.Font(None, 40) # 폰트 객체 생성(폰트, 크기)
 # 총 시간
 total_time = 10
 
-# 시간 계산
-start_ticks = pygame.time.get_ticks() # 시작 tick을 받아옴
+# 시작 시간
+start_ticks = pygame.time.get_ticks() # 현재 tick을 받아옴
 
 # 이벤트 루프
 running = True # 게임이 진행중인가?
@@ -107,7 +107,22 @@ while running:
     screen.blit(character, (character_x_pos, character_y_pos)) # 캐릭터 그리기
     screen.blit(enermy, (enermy_x_pos, enermy_y_pos)) # 적 그리기
 
+    # 타이머 집어 넣기
+    # 경과 시간 계산
+    elapsed_time = (pygame.time.get_ticks() - start_ticks) / 1000
+    # 경과 시간(ms)를 초단위(s)로 표시
+
+    timer = game_font.render(str(int(total_time - elapsed_time)), True, (255, 255, 255))
+    # 출력할 글자, True, 글자색상
+    screen.blit(timer, (10, 10))
+
+    # 만약 시간이 0이하면 게임 종료
+    if total_time - elapsed_time < 0:
+        print("Time out")
+        running = False
+    
     pygame.display.update() # 게임 화면을 다시 그리기!
 
 # pygame 종료
 pygame.quit()
+
