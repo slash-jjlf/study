@@ -45,7 +45,6 @@ character_x_pos = (screen_width / 2) - (character_width / 2)
 character_y_pos = screen_height - character_height
 
 # 이동 위치
-to_
 
 
 running = True # 게임이 진행중인가?
