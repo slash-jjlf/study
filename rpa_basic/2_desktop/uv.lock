@@ -10,6 +10,7 @@ dependencies = [
     { name = "opencv-python" },
     { name = "pillow" },
     { name = "pyautogui" },
+    { name = "pyperclip" },
 ]
 
 [package.metadata]
@@ -17,6 +18,7 @@ requires-dist = [
     { name = "opencv-python", specifier = ">=5.0.0.93" },
     { name = "pillow", specifier = ">=12.3.0" },
     { name = "pyautogui", specifier = ">=0.9.54" },
+    { name = "pyperclip", specifier = ">=1.11.0" },
 ]
 
 [[package]]
