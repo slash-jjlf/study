@@ -213,6 +213,9 @@ while running:
                     })
 
                 break
+        else:
+            continue # 충돌하지 않았으면 계속 루프
+        break # 충동했다면 이중포문 탈출
 
     # 충동될 공 or 무기 없애기
     if ball_to_remove > -1:
@@ -246,7 +249,7 @@ while running:
 
     # 경과 시간 계산
     elapsed_time = (pygame.time.get_ticks() - start_ticks) / 1000 # ms -> s
-    timer = game_font.render("Time : {}".format(int(total_time - elapsed_time)), True, (255,255,255))
+    timer = game_font.render("Time : {}".format(int(total_time - elapsed_time)), True, (255,255,255))  # noqa: UP032
     screen.blit(timer, (10, 10))
 
     # 시간 초과했다면
