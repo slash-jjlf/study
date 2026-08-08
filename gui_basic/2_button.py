@@ -15,4 +15,17 @@ btn3.pack()
 btn4 = Button(root, width = 10, height = 5, text = "버튼4") # 버튼의 크기 직접 결정
 btn4.pack()
 
+btn5 = Button(root, fg="red", bg="yellow", text="버튼5") # 버튼의 색 넣기
+btn5.pack()
+
+img = PhotoImage(file="./img.png")
+btn6 = Button(root, image=img)
+btn6.pack()
+
+def btncmd():
+    print("button is pushed..")
+    
+btn7 = Button(root, text="동작하는 버튼", command=btncmd)
+btn7.pack()
+
 root.mainloop()
