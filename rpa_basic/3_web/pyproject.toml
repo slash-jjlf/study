@@ -1,0 +1,10 @@
+[project]
+name = "3-web"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "ipython>=9.16.1",
+    "selenium>=4.47.0",
+]

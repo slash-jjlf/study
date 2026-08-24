@@ -1,0 +1,7 @@
+NAVER 로그인 버튼의 예
+
+<Full path>
+/html/body/div[2]/div[4]/div[2]/div[2]/div/div/div[1]/div/a
+
+<xpath>
+//*[@id="account"]/div/a 위의 full path를 간략히 표현ㅗㅛㅛ
