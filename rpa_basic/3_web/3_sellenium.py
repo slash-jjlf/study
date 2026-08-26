@@ -5,12 +5,11 @@ import time
 browser = webdriver.Chrome()
 browser.get("https://naver.com")
 
-time.sleep(5                                                                                                   )
+time.sleep(5)
 
 elem = browser.find_element(By.LINK_TEXT, "카페")
 
-elem.click()
-
+print(elem.text)
 
 
 
