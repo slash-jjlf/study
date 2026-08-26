@@ -10,6 +10,3 @@ time.sleep(5)
 elem = browser.find_element(By.LINK_TEXT, "카페")
 
 print(elem.text)
-
-
-
