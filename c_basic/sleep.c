@@ -10,7 +10,7 @@ int main(void) {
   fflush(stdout);
   sleep(2);
 
-  printf("\rroading....100%% completed! \n");
+  printf("\rloading....100%% completed! \n");
 
   return 0;
 }
