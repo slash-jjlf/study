@@ -23,5 +23,8 @@ int main(void) {
   result = ~first_value;
   printf("%d \n", result);
 
+  result = first_value << 1;
+  printf("%d \n", result);
+
   return 0;
 }
